@@ -3,11 +3,16 @@ import BookingForm from "./components/bookingForm";
 import Hero from "./components/hero";
 
 export const initializeTimes = () => {
-  return ["17:00", "18:00", "19:00", "20:00", "21:00", "22:00"];
+  const today = new Date();
+  return window.fetchAPI(today);
 };
-
 export const updateTimes = (state, action) => {
-  return state; // por ahora igual
+  if (action.type === "UPDATE_TIMES") {
+    const date = new Date(action.date);
+    return window.fetchAPI(date);
+  }
+
+  return state;
 };
 
 export default function BookingPage() {
