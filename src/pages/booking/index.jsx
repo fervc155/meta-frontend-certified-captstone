@@ -1,15 +1,17 @@
 import { useReducer } from "react";
 import BookingForm from "./components/bookingForm";
 import Hero from "./components/hero";
+import { fetchAPI } from "../../api";
 
 export const initializeTimes = () => {
   const today = new Date();
-  return window.fetchAPI(today);
+  return fetchAPI(today);
 };
+
 export const updateTimes = (state, action) => {
   if (action.type === "UPDATE_TIMES") {
     const date = new Date(action.date);
-    return window.fetchAPI(date);
+    return fetchAPI(date);
   }
 
   return state;
