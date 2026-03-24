@@ -42,11 +42,13 @@ export default function BookingPage() {
         cta="Make a reservation in our restaurant"
       />
       <section className="container booking-page">
-        <BookingForm
-          availableTimes={availableTimes}
-          dispatch={dispatch}
-          submitForm={submitForm}
-        />
+        <div className="card text-center p-3">
+          <BookingForm
+            availableTimes={availableTimes}
+            dispatch={dispatch}
+            submitForm={submitForm}
+          />
+        </div>
       </section>
     </>
   );
