@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function Hero() {
   return (
     <section className="hero">
@@ -9,7 +11,9 @@ export default function Hero() {
             We are a family owned Mediterranean restaurant, focused on
             traditional recipes served with a modern twist.
           </p>
-          <button className="btn">Reserve a Table</button>
+          <Link to="/booking">
+            <button className="btn">Reserve a Table</button>
+          </Link>
         </div>
         <div className="col-4"></div>
         <div className="col-4">
