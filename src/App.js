@@ -13,12 +13,13 @@ export default function App() {
   return (
     <Router>
       <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/booking" element={<Booking />} />
-        <Route path="/booking/confirmed" element={<BookingConfirmed />} />
-      </Routes>
-
+      <main>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/booking" element={<Booking />} />
+          <Route path="/booking/confirmed" element={<BookingConfirmed />} />
+        </Routes>
+      </main>
       <Footer />
     </Router>
   );

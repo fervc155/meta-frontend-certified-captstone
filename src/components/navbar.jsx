@@ -9,22 +9,34 @@ export default function Navbar() {
 
       <ul className="nav-links">
         <li>
-          <Link to="/">Home</Link>
+          <Link aria-label="On Click" to="/">
+            Home
+          </Link>
         </li>
         <li>
-          <Link to="/about">About</Link>
+          <Link aria-label="On Click" to="/about">
+            About
+          </Link>
         </li>
         <li>
-          <Link to="/menu">Menu</Link>
+          <Link aria-label="On Click" to="/menu">
+            Menu
+          </Link>
         </li>
         <li>
-          <Link to="/reservations">Reservations</Link>
+          <Link aria-label="On Click" to="/reservations">
+            Reservations
+          </Link>
         </li>
         <li>
-          <Link to="/order">Order Online</Link>
+          <Link aria-label="On Click" to="/order">
+            Order Online
+          </Link>
         </li>
         <li>
-          <Link to="/login">Login</Link>
+          <Link aria-label="On Click" to="/login">
+            Login
+          </Link>
         </li>
       </ul>
     </nav>

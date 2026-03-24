@@ -11,8 +11,10 @@ export default function Hero() {
             We are a family owned Mediterranean restaurant, focused on
             traditional recipes served with a modern twist.
           </p>
-          <Link to="/booking">
-            <button className="btn">Reserve a Table</button>
+          <Link aria-label="On Click" to="/booking">
+            <button aria-label="On Click" className="btn">
+              Reserve a Table
+            </button>
           </Link>
         </div>
         <div className="col-4"></div>
