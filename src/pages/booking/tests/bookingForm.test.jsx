@@ -7,8 +7,6 @@ const mockProps = {
   submitForm: jest.fn(),
 };
 
-// ✅ 1. HTML5 VALIDATION
-
 test("date input has required attribute", () => {
   render(<BookingForm {...mockProps} />);
   const dateInput = screen.getByLabelText("Choose date");
@@ -38,8 +36,6 @@ test("occasion select has required attribute", () => {
   expect(occasionSelect).toHaveAttribute("required");
 });
 
-// ✅ 2. VALIDACIÓN CON REACT
-
 test("submit button is disabled when form is invalid", () => {
   render(<BookingForm {...mockProps} />);
   const button = screen.getByRole("button");
@@ -66,8 +62,6 @@ test("submit button is enabled when form is valid", () => {
 
   expect(button).not.toBeDisabled();
 });
-
-// ✅ 3. TEST SUBMIT
 
 test("form submits when valid", () => {
   render(<BookingForm {...mockProps} />);
