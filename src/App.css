@@ -60,6 +60,11 @@ p {
   width: calc(100% / 3);
   padding: 10px;
 }
+
+.col-8 {
+  width: calc(calc(100% / 12) * 8);
+  padding: 10px;
+}
 .col-6 {
   width: calc(100% / 2);
   padding: 10px;
@@ -214,4 +219,38 @@ p {
 .extra {
   font-weight: bolder;
   font-size: 16px;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  background-color: #eaeaeb;
+}
+
+footer a {
+  color: #495e57 !important;
+  text-decoration: none;
+}
+
+footer ul.menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  font-weight: 500;
+}
+
+.py-5 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.as-center {
+  align-self: center;
 }
